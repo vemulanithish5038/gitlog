@@ -12,14 +12,14 @@ body {
     height: 100vh;
 }
 
-main {
+.login-credentials {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 300px;
     background-color: rgb(208, 211, 211);
-    border-radius: 7px;
+    border-radius: 10px;
 }
 
 
@@ -35,102 +35,93 @@ main {
     padding-right: 10px;
 }
 
-.website-register-options {
+/* .login-button {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
 
-#login-details {
-    display: flex;
-    padding: 8px 85px;
-    border-radius: 10px;
-    border: 1.5PX solid rgb(151, 152, 153);
+} */
+
+/* .login-button button {
+    padding: 8px 70px;
     font-size: medium;
     font-weight: 600;
-    font-style: italic;
-    color: rgb(35, 35, 35);
     margin: 10px;
-}
-
-#login-details:hover {
-    color: white;
-    background-color: rgb(151, 152, 153);
-}
-
-#user-email,
-#signup-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 8px 80px;
     border-radius: 10px;
-    border: 1.5PX solid rgb(151, 152, 153);
-    font-size: medium;
-    font-weight: 600;
-    font-style: italic;
-    color: rgb(41, 41, 41);
-    margin: 10px;
+    border: .5px solid rgb(41, 40, 40);
 }
 
-#signup-details:hover {
-    color: white;
-    background-color: rgb(151, 152, 153);
-}
+.login-button button:hover {
+    color: black;
+    background-color: rgb(123, 122, 122);
+} */
 
-#user-email {
-    padding: 8px 20px;
-    color: rgb(58, 58, 58);
-}
-
-
-#user-email:hover {
-    color: white;
-    background-color: rgb(151, 152, 153);
-}
-
-#user-password {
-    display: flex;
-    padding: 8px 20px;
-    border-radius: 10px;
-    border: 1.5PX solid rgb(151, 152, 153);
-    font-size: medium;
-    font-weight: 600;
-    font-style: italic;
-    color: rgb(58, 58, 58);
-    margin: 10px;
-}
-
-
-#user-password:hover {
-    color: white;
-    background-color: rgb(151, 152, 153);
-}
-
-#next-page {
+.input-text-area,
+.login-form-details {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    padding: 8px 20px;
-    border-radius: 10px;
-    border: 1.5PX solid rgb(151, 152, 153);
-    font-size: medium;
-    font-weight: 600;
-    font-style: italic;
-    color: rgb(58, 58, 58);
-    margin: 10px;
-    gap: 1rem;
-    cursor: pointer;
+    justify-content: flex-start;
+    font-size: large;
+    font-weight: 400;
+    margin: 15px;
 }
 
-#next-page {
-    color: white;
-    background-color: rgb(202, 55, 55);
+.input-text-area input,
+.login-form-details input {
+    padding: 7px 20px;
+    background-color: rgb(247, 246, 246);
+    border: 2px solid rgb(170, 167, 167);
+    border-radius: 7px;
+
 }
 
-#creating-access {
+#input-text-area,
+.login-form-details {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+#switch-user-again,
+#switch-user-once,
+#switch-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+    /* padding: 10px; */
+    margin-bottom: 25px;
+}
+
+#login-form{
+    display: block;
+}
+#signin-form{
+    display: none;
+}
+
+#change-credentials2{
+    padding: 3px;
+}
+
+.bold{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* padding: 2px 10px; */
+}
+
+
+#switch-user-again{
+    display: none;
+}
+
+#switch-user-once{
+    display: block;
 }
